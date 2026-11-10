@@ -1,23 +1,21 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A simple bar chart with stock prices of three companies.",
+  "title": "Vega-Lite Visualization",
   "data": {
     "values": [
-      { "date": "2025-01", "price": 120, "company": "Acme" },
-      { "date": "2025-02", "price": 135, "company": "Acme" },
-      { "date": "2025-03", "price": 128, "company": "Acme" },
-      { "date": "2025-01", "price": 95, "company": "Globex" },
-      { "date": "2025-02", "price": 110, "company": "Globex" },
-      { "date": "2025-03", "price": 105, "company": "Globex" },
-      { "date": "2025-01", "price": 210, "company": "Initech" },
-      { "date": "2025-02", "price": 225, "company": "Initech" },
-      { "date": "2025-03", "price": 240, "company": "Initech" }
+      { "category": "A", "value": 28 },
+      { "category": "B", "value": 55 },
+      { "category": "C", "value": 43 },
+      { "category": "D", "value": 91 },
+      { "category": "E", "value": 81 },
+      { "category": "F", "value": 53 },
+      { "category": "G", "value": 19 },
+      { "category": "H", "value": 87 }
     ]
   },
   "mark": "bar",
   "encoding": {
-    "x": { "field": "date", "type": "nominal", "title": "Month" },
-    "y": { "field": "price", "type": "quantitative", "title": "Price ($)" },
-    "color": { "field": "company", "type": "nominal", "title": "Company" }
+    "x": { "field": "category", "type": "nominal" },
+    "y": { "field": "value", "type": "quantitative" }
   }
 }
