@@ -1,1 +1,21 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stock Prices</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <style>
+    body { font-family: sans-serif; margin: 2rem; }
+    #chart { width: 100%; max-width: 700px; }
+  </style>
+</head>
+<body>
+  <h1>Stock Prices</h1>
+  <div id="chart"></div>
+  <script>
+    vegaEmbed('#chart', 'spec.json');
+  </script>
+</body>
+</html>
